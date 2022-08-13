@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}MyApp{% endblock %}
+
+{% block content %}
+<h1>Калькулятор каллорий</h1>
+<form method="post">
+    <p>Возраст, лет:</p>
+    <p><input type="number" name="age" class="form-control" value="0" min="10" max="150"></p>
+    <label for="bio">Выберите пол:</label>
+       <select id="bio" name="bio" class="form-select">
+         <option value="Мужчина">Мужчина</option>
+         <option value="Женщина">Женщина</option>
+       </select>
+    <p></p>
+    <p>Вес, кг: </p>
+    <p><input type="number" name="weight" class="form-control" value="0"></p>
+    <p>Рост, см: </p>
+    <p><input type="number" name="height" class="form-control" value="0"></p>
+    <label for="activity">Выберите уровень активности:</label>
+        <select id="activity" name="activity" class="form-select">
+            <option value="Низкий">Низкий</option>
+            <option value="Умеренный">Умеренный</option>
+            <option value="Высокий">Высокий</option>
+            <option value="Очень высокий">Очень высокий</option>
+        </select>
+    <br>
+    <input type="submit" value="Рассчитать" class="btn btn-success">
+</form>
+{% endblock %}
