@@ -28,10 +28,7 @@ class CaloriesInfo(db.Model):
 
 
 activity_lst = ['Низкий', "Умеренный", "Высокий", "Очень высокий"]
-ranges = [[x for x in range(10, 19)],
-          [x for x in range(18, 30)],
-          [x for x in range(30, 60)],
-          [x for x in range(60, 151)]]
+ranges = [range(10, 19), range(18, 30), range(30, 60), range(60, 151)]
 
 bio_lst = ['Мужчина', 'Женщина']
 
